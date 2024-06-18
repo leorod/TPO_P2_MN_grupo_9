@@ -6,7 +6,9 @@
 ---
 
 **Docente:** Monzon, Nicolás Alberto
+
 **Grupo:** 9
+
 **Integrantes:**
 - Acosta, Lautaro Pablo (LU XXXX)
 - Piñera, Iván Darío (LU XXXX)
