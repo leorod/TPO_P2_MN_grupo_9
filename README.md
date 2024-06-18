@@ -6,10 +6,13 @@
 ---
 
 **Docente:** Monzon, Nicolás Alberto
-
-**Alumno:** Rodríguez, Leonardo Agustín
-
-**Legajo:** 1048084
+**Grupo:** 9
+**Integrantes:**
+- Acosta, Lautaro Pablo (LU XXXX)
+- Piñera, Iván Darío (LU XXXX)
+- Presedo, Ailen (LU XXXX)
+- Rodríguez, Leonardo Agustín (LU 1048084)
+- Stoffel, Carlos Thomas (LU XXXX)
 
 ---
 
