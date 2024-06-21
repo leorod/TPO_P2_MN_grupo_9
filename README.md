@@ -10,7 +10,7 @@
 **Grupo:** 9
 
 **Integrantes:**
-- Acosta, Lautaro Pablo (LU XXXX)
+- Acosta, Lautaro Pablo (LU 1132735)
 - Piñera, Iván Darío (LU XXXX)
 - Presedo, Ailen (LU XXXX)
 - Rodríguez, Leonardo Agustín (LU 1048084)
