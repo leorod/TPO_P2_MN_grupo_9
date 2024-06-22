@@ -23,7 +23,7 @@
 
 ### Soluciones
 
-- [Ejercicio 1](src/ar/edu/uade/tpo/ejercicio1/Main.java)
+- [Ejercicio 1](src/ar/edu/uade/tpo/ejercicio1/QueueOfStacks.java)
 - [Ejercicio 2](src/ar/edu/uade/tpo/ejercicio2/Main.java)
 - [Ejercicio 3](src/ar/edu/uade/tpo/ejercicio3/Main.java)
 - [Ejercicio 4](src/ar/edu/uade/tpo/ejercicio4/Main.java)
