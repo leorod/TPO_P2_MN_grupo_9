@@ -4,6 +4,28 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+// COMPLEJIDAD COMPUTACIONAL DE LOS ALGORITMOS DE LA CLASE QueueOfStacks
+
+// push(int stackIndex, int value)
+// - Complejidad: O(n)
+// - Justificación: Se recorre la lista de stacks hasta encontrar el stack con el índice stackIndex.
+
+// getSize()
+// - Complejidad: O(1)
+// - Justificación: Se retorna el tamaño de la lista de stacks.
+
+// transpose(QueueOfStacks qOfStacks)
+// - Complejidad: O(n^2)
+// - Justificación: Se recorren las n filas y n columnas de la matriz original.
+
+// addMatrices(QueueOfStacks q1, QueueOfStacks q2)
+// - Complejidad: O(n^2)
+// - Justificación: Se recorren las n filas y n columnas de las matrices originales.
+
+// CONCLUSIÓN
+// La complejidad computacional de los algoritmos de la clase QueueOfStacks es O(n^2).
+
+
 public class QueueOfStacks {
     private Queue<Stack<Integer>> queueOfStacks;
 
