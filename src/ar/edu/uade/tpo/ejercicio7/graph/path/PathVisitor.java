@@ -1,4 +1,6 @@
-package ar.edu.uade.tpo.ejercicio7;
+package ar.edu.uade.tpo.ejercicio7.graph.path;
+
+import ar.edu.uade.tpo.ejercicio7.graph.Node;
 
 import java.util.HashSet;
 import java.util.LinkedList;

@@ -1,4 +1,7 @@
-package ar.edu.uade.tpo.ejercicio7;
+package ar.edu.uade.tpo.ejercicio7.graph;
+
+import ar.edu.uade.tpo.ejercicio7.graph.path.Path;
+import ar.edu.uade.tpo.ejercicio7.graph.path.PathVisitor;
 
 import java.util.HashSet;
 import java.util.Set;

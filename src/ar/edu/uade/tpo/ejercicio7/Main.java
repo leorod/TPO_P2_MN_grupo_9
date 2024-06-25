@@ -1,6 +1,8 @@
 package ar.edu.uade.tpo.ejercicio7;
 
-import java.util.List;
+import ar.edu.uade.tpo.ejercicio7.graph.DynamicDirectedGraph;
+import ar.edu.uade.tpo.ejercicio7.graph.Graph;
+
 import java.util.Set;
 
 public class Main {
