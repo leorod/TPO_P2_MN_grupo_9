@@ -11,10 +11,9 @@
 
 **Integrantes:**
 - Acosta, Lautaro Pablo (LU 1132735)
-- Piñera, Iván Darío (LU XXXX)
+- Piñera, Iván Darío (LU 1146708)
 - Presedo, Ailen (LU XXXX)
 - Rodríguez, Leonardo Agustín (LU 1048084)
-- Stoffel, Carlos Thomas (LU XXXX)
 
 ---
 
