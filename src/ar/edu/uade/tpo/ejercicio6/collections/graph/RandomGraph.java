@@ -1,16 +1,14 @@
-package ar.edu.uade.tpo.ejercicio7.graph;
+package ar.edu.uade.tpo.ejercicio6.collections.graph;
 
 import ar.edu.uade.tpo.common.Edge;
 import ar.edu.uade.tpo.common.Graph;
 import ar.edu.uade.tpo.common.GraphNode;
-import ar.edu.uade.tpo.ejercicio7.graph.path.Path;
-import ar.edu.uade.tpo.ejercicio7.graph.path.PathVisitor;
 
 import java.util.HashSet;
-import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
-public class DynamicDirectedGraph implements Graph {
+public class RandomGraph implements Graph {
 
     private static final int MAX_NODES = 15;
 
@@ -18,10 +16,22 @@ public class DynamicDirectedGraph implements Graph {
     private int totalNodes;
     private final Set<Edge> edges;
 
-    public DynamicDirectedGraph() {
+    public RandomGraph() {
+        Random random = new Random();
         this.adjacencyList = new GraphNode[MAX_NODES];
-        this.totalNodes = 0;
         this.edges = new HashSet<>();
+
+        int nodes = random.nextInt(MAX_NODES) + 1;
+        for (int i = 0; i < nodes; i ++) {
+            addNode(i);
+        }
+
+        int totalEdges = random.nextInt(totalNodes * (totalNodes - 1) / 2) + 1;
+        for (int i = 0; i < totalEdges; i++) {
+            GraphNode from = adjacencyList[random.nextInt(totalNodes)];
+            GraphNode to = adjacencyList[random.nextInt(totalNodes)];
+            addEdge(from.getValue(), to.getValue());
+        }
     }
 
     private GraphNode getNode(int value) {
@@ -107,53 +117,6 @@ public class DynamicDirectedGraph implements Graph {
         }
         GraphNode nodeTo = getNode(to);
         return nodeFrom.getNext().contains(nodeTo);
-    }
-
-    /**
-     * Uso un Visitor para recorrer todos los nodos del grafo y extraer todos los caminos posibles a partir de cada nodo,
-     * sin repetir nodos (y evitar, en el proceso loops infinitos).
-     * Luego filtro esos caminos para quedarme únicamente con los que empiezan y terminan por el mismo nodo, de esta forma
-     * identificando las componentes fuertemente conexas del grafo, ya que si un camino empieza y termina en 2 nodos distintos,
-     * significa que es una de las siguientes alternativas:
-     *  - El camino representa solo una parte de una componente fuertemente conexa (en cuyo caso debería tener también el camino completo en la lista)
-     *  - El camino en un punto diverge de la componente fuertemente conexa y no posee una arista que lo conecte desde el último nodo
-     * A partir de estos resultados, genero los nuevos sub-grafos a partir de los valores en cada camino, reconstruyendo
-     * las aristas usando el orden de la lista misma.
-     *
-     * Si quisiera aplicarse esto a un grafo no dirigido, en principio sería un error conceptual ya que el concepto de
-     * "Fuertemente Conexo" aplica sólo a grafos dirigidos.
-     * En esta implementación, un grafo no-dirigido se trataría como un grafo dirigido pero con todas sus aristas bidireccionales,
-     * lo que implica que para cada componente fuertemente conexa, daría como resultado dos grafos con los mismos nodos
-     * pero con las aristas en dirección opuesta uno respecto del otro.
-     *
-     * @return Conjunto de grafos fuertemente conexos
-     */
-    public Set<Graph> getStronglyConnectedComponents() {
-        Set<Graph> stronglyConnectedComponents = new HashSet<>();
-        PathVisitor pathVisitor = new PathVisitor();
-        for (int i = 0; i < this.totalNodes; i++) {
-            pathVisitor.visit(adjacencyList[i]);
-        }
-        List<Path> paths = pathVisitor.getPaths();
-        for (Path path : paths) {
-            if (path.getStart() == path.getEnd()) {
-                Graph graph = new DynamicDirectedGraph();
-                int previous = -1;
-                Set<Integer> added = new HashSet<>();
-                for (int step : path.getSteps()) {
-                    if (!added.contains(step)) {
-                        graph.addNode(step);
-                        added.add(step);
-                    }
-                    if (previous > -1) {
-                        graph.addEdge(previous, step);
-                    }
-                    previous = step;
-                }
-                stronglyConnectedComponents.add(graph);
-            }
-        }
-        return stronglyConnectedComponents;
     }
 
     @Override

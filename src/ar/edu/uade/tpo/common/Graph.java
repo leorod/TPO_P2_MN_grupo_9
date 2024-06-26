@@ -1,4 +1,4 @@
-package ar.edu.uade.tpo.ejercicio7.graph;
+package ar.edu.uade.tpo.common;
 
 import java.util.Set;
 
