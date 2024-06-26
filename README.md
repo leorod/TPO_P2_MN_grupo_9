@@ -12,7 +12,7 @@
 **Integrantes:**
 - Acosta, Lautaro Pablo (LU 1132735)
 - Piñera, Iván Darío (LU 1146708)
-- Presedo, Ailen (LU XXXX)
+- Presedo, Ailen (LU 1163578)
 - Rodríguez, Leonardo Agustín (LU 1048084)
 
 ---
@@ -22,10 +22,10 @@
 
 ### Soluciones
 
-- [Ejercicio 1](src/ar/edu/uade/tpo/ejercicio1/QueueOfStacks.java)
-- [Ejercicio 2](src/ar/edu/uade/tpo/ejercicio2/Main.java)
-- [Ejercicio 3](src/ar/edu/uade/tpo/ejercicio3/Main.java)
-- [Ejercicio 4](src/ar/edu/uade/tpo/ejercicio4/Main.java)
+- [Ejercicio 1](src/ar/edu/uade/tpo/ejercicio1/QueueOfStacks.java) -Acosta, Lautaro. Piñera, Iván. Presedo, Ailen 
+- [Ejercicio 2](src/ar/edu/uade/tpo/ejercicio2/Main.java) -Piñera, Iván
+- [Ejercicio 3](src/ar/edu/uade/tpo/ejercicio3/Main.java) -Acosta, Lautaro
+- [Ejercicio 4](src/ar/edu/uade/tpo/ejercicio4/Main.java) -Piñera, Iván
 - [Ejercicio 5](src/ar/edu/uade/tpo/ejercicio5/Main.java)
-- [Ejercicio 6](src/ar/edu/uade/tpo/ejercicio6/Main.java)
-- [Ejercicio 7](src/ar/edu/uade/tpo/ejercicio7/Main.java)
+- [Ejercicio 6](src/ar/edu/uade/tpo/ejercicio6/Main.java) -Rodríguez, Leonardo
+- [Ejercicio 7](src/ar/edu/uade/tpo/ejercicio7/Main.java) -Rodríguez, Leonardo
