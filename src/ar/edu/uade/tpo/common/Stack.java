@@ -1,16 +1,16 @@
-package ar.edu.uade.tpo.ejercicio6.collections.stack;
+package ar.edu.uade.tpo.common;
 
 /**
  * Precondicion: para usar cualquier de estos metodos la estructura debe estar inicializada.
  */
-public interface Stack {
+public interface Stack<T> {
 
     /**
      * Postcondicion: Apila (coloca en el tope) un valor.
      *
      * @param a valor a apilar.
      */
-    void add(int a);
+    void add(T a);
 
     /**
      * Precondicion: La pila no esta vacia.
@@ -26,6 +26,6 @@ public interface Stack {
     /**
      * @return tope de la pila
      */
-    int getTop();
+    T getTop();
 
 }

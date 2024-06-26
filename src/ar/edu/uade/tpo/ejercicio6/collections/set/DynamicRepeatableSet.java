@@ -1,6 +1,6 @@
 package ar.edu.uade.tpo.ejercicio6.collections.set;
 
-import ar.edu.uade.tpo.ejercicio6.collections.Node;
+import ar.edu.uade.tpo.common.Node;
 import ar.edu.uade.tpo.ejercicio6.collections.Tuple;
 
 import java.util.Random;

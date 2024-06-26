@@ -26,6 +26,6 @@
 - [Ejercicio 2](src/ar/edu/uade/tpo/ejercicio2/Main.java) -Piñera, Iván
 - [Ejercicio 3](src/ar/edu/uade/tpo/ejercicio3/Main.java) -Acosta, Lautaro
 - [Ejercicio 4](src/ar/edu/uade/tpo/ejercicio4/Main.java) -Piñera, Iván
-- [Ejercicio 5](src/ar/edu/uade/tpo/ejercicio5/Main.java)
+- [Ejercicio 5](src/ar/edu/uade/tpo/ejercicio5/Main.java) -Rodríguez, Leonardo
 - [Ejercicio 6](src/ar/edu/uade/tpo/ejercicio6/Main.java) -Rodríguez, Leonardo
 - [Ejercicio 7](src/ar/edu/uade/tpo/ejercicio7/Main.java) -Rodríguez, Leonardo

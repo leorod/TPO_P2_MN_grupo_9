@@ -1,4 +1,4 @@
-package ar.edu.uade.tpo.ejercicio6.collections;
+package ar.edu.uade.tpo.common;
 
 public class Node<T> {
     private T value;

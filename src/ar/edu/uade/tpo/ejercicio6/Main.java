@@ -9,7 +9,7 @@ import ar.edu.uade.tpo.ejercicio6.collections.set.DynamicSuperSet;
 import ar.edu.uade.tpo.ejercicio6.collections.set.Set;
 import ar.edu.uade.tpo.ejercicio6.collections.set.SuperSet;
 import ar.edu.uade.tpo.ejercicio6.collections.stack.DynamicLimitedStack;
-import ar.edu.uade.tpo.ejercicio6.collections.stack.Stack;
+import ar.edu.uade.tpo.common.Stack;
 
 public class Main {
     public static void main(String[] args) {
